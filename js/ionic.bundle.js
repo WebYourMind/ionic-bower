@@ -60198,10 +60198,10 @@ IonicModule
     }
 
     function handleTouchstart(e) {
-      e.touches = e.touches || [{
-        screenX: e.screenX,
-        screenY: e.screenY
-      }];
+      // e.touches = e.touches || [{
+      //   screenX: e.screenX,
+      //   screenY: e.screenY
+      // }];
 
       startY = e.touches[0].screenY;
     }
@@ -60236,10 +60236,10 @@ IonicModule
     }
 
     function handleTouchmove(e) {
-      e.touches = e.touches || [{
-        screenX: e.screenX,
-        screenY: e.screenY
-      }];
+      // e.touches = e.touches || [{
+      //   screenX: e.screenX,
+      //   screenY: e.screenY
+      // }];
 
       // Force mouse events to have had a down event first
       if (!startY && e.type == 'mousemove') {
